@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+              <div class="brand"><a href="index.html">OpatowskiLogo</a></div>
+              <div class="search">
+                    <ul class="menu">
+                          <li><a href="portfolio.html">PORTFOLIO</a></li>
+                          <li><a href="kontakt.html">KONTAKT</a></li>
+                          <li><a href="omnie.html">O MNIE</a></li>
+                    </ul>    
+              </div> 
+        </div>
+        <h1><span class="letter1">P</span><span class="letter2">O</span><span class="letter3">R</span><span class="letter4">T</span><span class="letter5">F</span><span class="letter6">O</span><span class="letter7">L</span><span class="letter8">I</span><span class="letter9">O</span></h1>
+        <div class="projects-wrapper">
+              <div class="project-wrapper">
+                  <h2 class="header1"><span>OIL HEMP</span></h2>
+                
+                  <iframe class="frame1" src="https://player.vimeo.com/video/508815543" width="1000" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  
+            </div>
+            <div class="project-wrapper wrapper2">
+                  <h2 class="header2">THE WORLD OF FASHION <BR> BETWEEN DIMENSIONS</h2>
+                  <iframe id="smaller-size" class="frame2" src="https://player.vimeo.com/video/518974335"  frameborder="0" webkitallowfullscreen mozallowfullscreen title="0" sidedock="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                 
+            </div>
+            <div class="project-wrapper wrapper3">
+                  <iframe class="frame3" src="https://player.vimeo.com/video/508817453" width="900" height="450" frameborder="0" ></iframe>
+                  <h2 class="header3"><span>AVON PERFUME</span></h2>
+            </div>
+          
+         
+            </div>
+        
+        
+  </div>
+
+<script type="text/javascript">
+    TweenMax.from("h1",1.6,{
+              delay:0.7,
+              y:20,
+              opacity:0,
+              ease:Expo.easeInOut
+        });
+ 
+        TweenMax.from(".header1",1.9,{
+              delay:1.2,
+              x:-20,
+              opacity:0,
+              ease:Expo.easeInOut
+        });
+      
+        TweenMax.from(".frame1",1.9,{
+              delay:1.5,
+              x:-20,
+              opacity:0,
+              ease:Expo.easeInOut
+        });
+        let t1 = gsap.timeline({
+            scrollTrigger:'.wrapper2'
+
+        })
+        let t2 = gsap.timeline({
+            scrollTrigger:'.wrapper2'
+
+        })
+        t1.from(".header2",{
+            delay:0.5,
+            x:30,
+            opacity:0,
+            duration:1.9,
+            
+        })
+        t2.from(".frame2",{
+            delay:0.7,
+            x:30,
+            opacity:0,
+            duration:1.9
+        })
+        let t3 = gsap.timeline({
+            scrollTrigger:'.wrapper3'
+
+        })
+        let t4 = gsap.timeline({
+            scrollTrigger:'.wrapper3'
+
+        })
+        t1.from(".header3",{
+            delay:0.5,
+            x:-30,
+            opacity:0,
+            duration:1.9,
+            
+        })
+        t2.from(".frame3",{
+            delay:0.5,
+            x:-30,
+            opacity:0,
+            duration:1.9
+        })
+    
+</script>
+</body>
+</html>
