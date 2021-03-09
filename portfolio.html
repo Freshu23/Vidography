@@ -14,7 +14,21 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    
+    <div class="animation-container">
+        <div class="text-wrapper">
+            <div class="text-1 text">PORTFOLIO</div>
+            <div class="text-2 text">PORTFOLIO</div>
+            <div class="text-3 text">PORTFOLIO</div>
+            <div class="text-4 text">PORTFOLIO</div>
+            <div class="text-5 text">PORTFOLIO</div>
+            <div class="text-6 text">PORTFOLIO</div>
+            <div class="text-7 text">PORTFOLIO</div>
+            <div class="text-8 text">PORTFOLIO</div>
+            <div class="text-9 text">PORTFOLIO</div>
+            <div class="text-10 text">PORTFOLIO</div>
+            <div class="text-11 text">PORTFOLIO</div>
+        </div>
+    </div>
     <div class="container">
         <div class="nav">
               <div class="brand"><a href="index.html">OpatowskiLogo</a></div>
@@ -26,9 +40,8 @@
                     </ul>    
               </div> 
         </div>
-        <h1><span class="letter1">P</span><span class="letter2">O</span><span class="letter3">R</span><span class="letter4">T</span><span class="letter5">F</span><span class="letter6">O</span><span class="letter7">L</span><span class="letter8">I</span><span class="letter9">O</span></h1>
         <div class="projects-wrapper">
-              <div class="project-wrapper">
+              <div class="project-wrapper wrapper1">
                   <h2 class="header1"><span>OIL HEMP</span></h2>
                 
                   <iframe class="frame1" src="https://player.vimeo.com/video/508815543" width="1000" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -43,6 +56,15 @@
                   <iframe class="frame3" src="https://player.vimeo.com/video/508817453" width="900" height="450" frameborder="0" ></iframe>
                   <h2 class="header3"><span>AVON PERFUME</span></h2>
             </div>
+            <div class="project-wrapper wrapper4">
+                <h2 class="header4">ACUPRESSURE MAT</h2>
+                <iframe class="frame4" src="https://player.vimeo.com/video/508814830" width="900" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                
+             </div>
+            <div class="project-wrapper wrapper5">
+                <iframe class="frame5" src="https://player.vimeo.com/video/508811267" width="900" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <h2 class="header5"><span>FRAGMENT OF MY MIND</span></h2>
+            </div>
           
          
             </div>
@@ -51,32 +73,35 @@
   </div>
 
 <script type="text/javascript">
-    TweenMax.from("h1",1.6,{
-              delay:0.7,
-              y:20,
-              opacity:0,
-              ease:Expo.easeInOut
-        });
+  let t9 = gsap.timeline({
+            scrollTrigger:'.nav'
+
+        })
+        let t10 = gsap.timeline({
+            scrollTrigger:'.nav'
+
+        })
+  
  
-        TweenMax.from(".header1",1.9,{
-              delay:1.2,
+        t10.from(".header1",1.9,{
+              delay:4,
               x:-20,
               opacity:0,
               ease:Expo.easeInOut
         });
       
-        TweenMax.from(".frame1",1.9,{
-              delay:1.5,
+        t9.from(".frame1",1.9,{
+              delay:4.2,
               x:-20,
               opacity:0,
               ease:Expo.easeInOut
         });
         let t1 = gsap.timeline({
-            scrollTrigger:'.wrapper2'
+            scrollTrigger:'.wrapper1'
 
         })
         let t2 = gsap.timeline({
-            scrollTrigger:'.wrapper2'
+            scrollTrigger:'.wrapper1'
 
         })
         t1.from(".header2",{
@@ -93,22 +118,64 @@
             duration:1.9
         })
         let t3 = gsap.timeline({
-            scrollTrigger:'.wrapper3'
+            scrollTrigger:'.wrapper2'
 
         })
         let t4 = gsap.timeline({
-            scrollTrigger:'.wrapper3'
+            scrollTrigger:'.wrapper2'
 
         })
         t1.from(".header3",{
-            delay:0.5,
+            delay:0.4,
             x:-30,
             opacity:0,
             duration:1.9,
             
         })
         t2.from(".frame3",{
-            delay:0.5,
+            delay:0.7,
+            x:-30,
+            opacity:0,
+            duration:1.9
+        })
+        let t5 = gsap.timeline({
+            scrollTrigger:'.wrapper3'
+
+        })
+        let t6 = gsap.timeline({
+            scrollTrigger:'.wrapper3'
+
+        })
+        t5.from(".header4",{
+            delay:0.4,
+            x:30,
+            opacity:0,
+            duration:1.9,
+            
+        })
+        t6.from(".frame4",{
+            delay:0.6,
+            x:30,
+            opacity:0,
+            duration:1.9
+        })
+        let t7 = gsap.timeline({
+            scrollTrigger:'.wrapper4'
+
+        })
+        let t8 = gsap.timeline({
+            scrollTrigger:'.wrapper4'
+
+        })
+        t7.from(".header5",{
+            delay:0.4,
+            x:-30,
+            opacity:0,
+            duration:1.9,
+            
+        })
+        t8.from(".frame5",{
+            delay:0.6,
             x:-30,
             opacity:0,
             duration:1.9
