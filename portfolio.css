@@ -1,4 +1,7 @@
 
+html,body{
+    overflow: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -104,6 +107,9 @@ h2 span {
 .wrapper1{
     flex-direction: column;
 }
+.frame1{
+    margin-left: -3vw;
+}
 .wrapper2{
     margin-left:5vw;
     display: flex;
@@ -119,7 +125,7 @@ h2 span {
 .siema{
     pointer-events: none;
 }
-.frame2{
+iframe{
     width: 60vw;
     overflow:hidden;
 }

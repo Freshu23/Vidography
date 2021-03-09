@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -72,6 +73,16 @@
   </div>
 
 <script type="text/javascript">
+    
+    $(function(){
+  setTimeout(function(){
+    $('html, body')
+    .css({
+      'overflow': 'auto'
+    })
+  }, 4000);
+});
+
   let t9 = gsap.timeline({
             scrollTrigger:'.nav'
 
