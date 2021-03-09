@@ -4,7 +4,7 @@ body {
   padding: 0;
 
   background-size: cover;
-  background-color: black;
+  background-color: rgb(87, 86, 86);
   font-family: 'Bebas Neue', cursive;
 }
 .nav {
@@ -75,6 +75,7 @@ h2 span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url("hero.gif");
 }
 .projects-wrapper{
     width: 100%;
@@ -139,7 +140,7 @@ h2 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:black;
+    background-image: url("hero.gif");
     animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
     animation-fill-mode: forwards;
 }
