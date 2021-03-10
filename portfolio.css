@@ -89,7 +89,7 @@ h2 span {
     display: flex;
     flex-direction: row;
     margin-bottom: 30vh;
-    margin-left: 10vw;
+    
     overflow: hidden;
   
   
@@ -106,10 +106,12 @@ h2 span {
 }
 .wrapper1{
     flex-direction: column;
+    margin-left:3vw;
 }
-.frame1{
-    margin-left: -3vw;
+.header1 span{
+    margin-left: 3vw;
 }
+
 .wrapper2{
     margin-left:5vw;
     display: flex;
