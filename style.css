@@ -129,7 +129,7 @@ h2{
     }
     .menu{
         width: 100vw;
-        height: 0vh;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
