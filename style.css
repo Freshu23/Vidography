@@ -116,10 +116,12 @@ h2{
         left: 40%;
     }
     h2{
+        margin-top: 5vh;
         bottom: 38%;
         font-size: 8vw;
     }
     .button{
+        margin-top: 5vh;
         width: 45vw;
         font-size: 6vw;
         top:60%;
