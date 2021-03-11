@@ -64,7 +64,13 @@
 
       // To finish off the ‘setup’ function, the displacement filter scale is set and the background positioned.
       // Notice the scale is ‘0’ for the displacement, that’s because it will be set to a height as soon as the mouse moves.
-            let q = app.renderer.width/90;
+            let q;
+           if(window.screen.width<1048){
+             q = app.renderer.width/1;
+           } else{
+            q = app.renderer.width/90;
+           }
+            
             app.stage.addChild(displacementSprite);
             container.filters = [displacementFilter];
             displacementFilter.scale.x = 0;
