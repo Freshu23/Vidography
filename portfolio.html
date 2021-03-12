@@ -40,6 +40,9 @@
                           <li><a href="omnie.html">O MNIE</a></li>
                     </ul>    
               </div> 
+              <div class="menu-icon">
+                <img class="hamburger" src="menu_icon.png">
+              </div>
         </div>
         <div class="projects-wrapper">
               <div class="project-wrapper wrapper1">
@@ -49,7 +52,7 @@
             </div>
             <div class="project-wrapper wrapper2">
                   <h2 class="header2">THE WORLD OF FASHION <BR> BETWEEN DIMENSIONS</h2>
-                  <iframe id="smaller-size" class="frame2" src="https://player.vimeo.com/video/518974335"  frameborder="0" webkitallowfullscreen mozallowfullscreen title="0" sidedock="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe class="frame2" src="https://player.vimeo.com/video/518974335" width="900" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                  
             </div>
             <div class="project-wrapper wrapper3">
@@ -82,6 +85,10 @@
     })
   }, 4000);
 });
+if(window.screen.width<1048){
+    $('.header3').insertBefore('.frame3');
+    $('.header5').insertBefore('.frame5');
+           }
 
   let t9 = gsap.timeline({
             scrollTrigger:'.nav'
@@ -192,5 +199,6 @@
         })
     
 </script>
+<script src="menu.js"></script>
 </body>
 </html>
