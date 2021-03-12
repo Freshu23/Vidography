@@ -322,8 +322,16 @@ iframe{
         margin-left: 0;
         margin-right: 0;
     }
-    .frame2{
-        width: 100%;
+    .frame4{
+        margin-left: 0;
+    }
+    .header2{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    .header5{
+        margin-left: 0;
+        margin-right: 0;
     }
     .project-wrapper{
         margin-top: 0;
