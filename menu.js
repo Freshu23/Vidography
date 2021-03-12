@@ -4,5 +4,5 @@ const header = document.querySelector(".header");
 
 button.addEventListener('click',()=>{
     menu.classList.toggle('active');
-    console.log("e")
+  
 })

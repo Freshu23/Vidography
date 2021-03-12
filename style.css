@@ -136,18 +136,22 @@ h2{
         background-color: black;
         right: -20px;
         z-index: 999;
-        display: none;
+        transition: 0.7s ease-in-out;
         position: absolute;
+        transform: translateY(-100%);
       
         
     }
+    
     .active{
-      display: flex;
+      transform: translateY(0%) !important;
       
     }
-   
+    .menu li{
+        margin-bottom: 10vh;
+    }
     .menu a{
-        font-size: 6vw;
+        font-size: 10vw;
     }
     .header{
         font-size: 8vw;
