@@ -27,9 +27,10 @@ body {
 }
 
 .brand {
+    margin-top: 1vw;
     margin-left: 40px;
     color: #fff;
-    font-size: 16px;
+    width: 7vw;
 }
 
 .search {
@@ -112,6 +113,10 @@ h2{
     display: none;
 }
 @media(max-width:1048px){
+    .brand{
+        margin-top: 3vw;
+        width: 20vw;
+    }
     .hamburger{
         display: block;
         color: white;

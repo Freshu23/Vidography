@@ -15,7 +15,7 @@
 <body>
       <div class="container">
             <div class="nav">
-                  <div class="brand">OpatowskiLogo</div>
+                  <img class="brand" src="LOGOELO.png">
                   <div class="search">
                         <ul class="menu">
                               <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -50,8 +50,12 @@
         var posX, displacementSprite, displacementFilter, bg, vx;
         var container = new PIXI.Container();
         app.stage.addChild(container);
-
-       PIXI.loader.add("ripple.png").add("foto-final.jpg").load(setup);
+      if(window.screen.width<1048){
+        PIXI.loader.add("ripple.png").add("bg-mobile.jpg").load(setup);
+      }else{
+        PIXI.loader.add("ripple.png").add("foto-final.jpg").load(setup);
+      }
+       
 
       // In the ‘setup’ function the displacement sprite is created
       // that will create the effect and this is added to a displacement filter.
@@ -69,7 +73,7 @@
       // Notice the scale is ‘0’ for the displacement, that’s because it will be set to a height as soon as the mouse moves.
             let q;
            if(window.screen.width<1048){
-             q = app.renderer.width/1;
+             q = app.renderer.width/0.5;
            } else{
             q = app.renderer.width/90;
            }
@@ -78,7 +82,12 @@
             container.filters = [displacementFilter];
             displacementFilter.scale.x = 0;
             displacementFilter.scale.y = 0;
-            bg = new PIXI.Sprite(PIXI.loader.resources["foto-final.jpg"].texture);
+            if(window.screen.width<900){
+              bg = new PIXI.Sprite(PIXI.loader.resources["bg-mobile.jpg"].texture);
+            }else{
+              bg = new PIXI.Sprite(PIXI.loader.resources["foto-final.jpg"].texture);
+            }
+            
             bg.width = app.renderer.width-q;
             bg.height = app.renderer.height;
             container.addChild(bg);

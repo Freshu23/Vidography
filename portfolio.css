@@ -10,6 +10,13 @@ body {
   background-color: rgb(87, 86, 86);
   font-family: 'Bebas Neue', cursive;
 }
+::-webkit-scrollbar{
+    background-color: rgb(49, 49, 49);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
 .nav {
     position: fixed;
     width: 100%;
@@ -20,11 +27,12 @@ body {
     justify-content: space-between;
 }
 .brand {
+    margin-top: 0.5vw;
     margin-left: 40px;
     color: #fff;
-    font-size: 16px;
-    margin-top:2vh;
+    width: 7vw;
 }
+
 .search {
     right: 2vw;
     color: #fff;
@@ -151,7 +159,7 @@ iframe{
     justify-content: center;
     align-items: center;
     background-image: url("hero.gif");
-    animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation: slide-out-container 3s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
     animation-fill-mode: forwards;
 }
 
@@ -217,7 +225,7 @@ iframe{
 }
 
 .text-6 {
-    animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s, slide-out 1s linear 3.2s;
+    animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s;
     opacity: 0;
 }
 
