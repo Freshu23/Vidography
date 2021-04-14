@@ -112,6 +112,10 @@ h2{
 .hamburger{
     display: none;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 @media(max-width:1048px){
     .brand{
         margin-top: 3vw;
