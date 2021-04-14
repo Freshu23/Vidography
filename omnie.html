@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="omnie.css">
 </head>
 <body>
     <div class="container">
@@ -22,7 +22,9 @@
               </div> 
         </div>
         <div class="wrapper">
-            <h1>O MNIE</h1>
+            <h1>OSKAR OPATOWSKI</h1>
+            <p class="row-1">Całe życie uprawiam Parkour i Freeruning, przy czym zawsze towarzyszyło mi nagrywanie.</p>
+            <p class="row-2">Produkcja filmów przerodziła się w kolejną pasję, a także pracę. </p>
         </div>
        
        
@@ -36,14 +38,14 @@
             ease: Expo.easeInOut,
             skewY:10
         });
-        TweenMax.from("p", 1.6, {
+        TweenMax.from(".row-1", 1.6, {
             delay: 0.5,
             y: 50,
             opacity: 0,
             ease: Expo.easeInOut,
-            skewY:10
+            
         });
-        TweenMax.from(".ig", 1.6, {
+        TweenMax.from(".row-2", 1.6, {
             delay: 0.9,
             y: 50,
             opacity: 0,

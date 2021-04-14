@@ -80,11 +80,12 @@ h1{
     font-size: 4vw;
 }
 p{
-    color: white;
-    position: absolute;
-    top:30%;
-    font-size: 2.5vw;
+   color: white;
+   position: absolute;
+  font-size: 2.5vw;
+  top: 30%;
 }
+
 .wrapper{
     width: 100vw;
     display: flex;
